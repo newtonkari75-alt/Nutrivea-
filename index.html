@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de-DE">
 <head>
     <script src="https://cdn.raldoeira.com/code/8300-e5d17149-b6f7-4ea0-bda9-43d0118b02ec"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- ================= SEO PRINCIPAL ================= -->
-    <title>Nutrivea™ | Stoffwechsel-Balance & Verdauungsgesundheit</title>
-    <meta name="description" content="Nutrivea — Wenn sich dein Körper nicht mehr richtig anfühlt. Sparen Sie heute 46%. Schneller Versand. 60 Tage Geld-zurück-Garantie.">
-    <!-- Keywords updated for German context -->
-    <meta name="keywords" content="Nutrivea, Stoffwechsel, Verdauung, Darmgesundheit, Abnehmen, Gewichtsmanagement, Probiotika, Energie, Magen, Verdauungshilfe">
+    <!-- ================= SEO PRINCIPAL (DE & AT) ================= -->
+    <title>Nutrivea™ Offiziell | Stoffwechsel & Verdauung | DE & AT</title>
+    <meta name="description" content="Nutrivea™ Offizieller Shop. Natürliche Unterstützung für Stoffwechsel & Verdauung. Sparen Sie 46%. 60-Tage-Garantie. Schneller Versand nach Deutschland & Österreich.">
+    
+    <!-- Keywords (German & English Mix for DE/AT) -->
+    <meta name="keywords" content="Nutrivea, Nutrivea kaufen, Nutrivea Deutschland, Nutrivea Österreich, Stoffwechsel anregen, Verdauung, Darmgesundheit, metabolic balance, digestive health, buy Nutrivea, Nutrivea review, abnehmen, weight management">
+    
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     
-    <!-- Global Target Regions -->
-    <meta name="geo.region" content="DE, AT, CH, US, GB, FR, IT, ES, NL, BE, PL, SE, FI, DK, IE">
+    <!-- Targeted Regions: Germany (DE) & Austria (AT) -->
+    <meta name="geo.region" content="DE, AT">
+    <meta name="geo.placename" content="Berlin, Vienna, Munich, Hamburg">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://nutrivea.vercel.app/">
     
-    <!-- Hreflang Tags -->
-    <link rel="alternate" hreflang="x-default" href="https://nutrivea.vercel.app/">
+    <!-- Hreflang Tags for Regional Targeting -->
+    <link rel="alternate" hreflang="de-DE" href="https://nutrivea.vercel.app/">
+    <link rel="alternate" hreflang="de-AT" href="https://nutrivea.vercel.app/">
     <link rel="alternate" hreflang="de" href="https://nutrivea.vercel.app/">
     <link rel="alternate" hreflang="en" href="https://nutrivea.vercel.app/">
+    <link rel="alternate" hreflang="x-default" href="https://nutrivea.vercel.app/">
     
     <!-- ================= OPEN GRAPH (SOCIAL) ================= -->
     <meta property="og:type" content="product">
-    <meta property="og:site_name" content="Nutrivea">
-    <meta property="og:title" content="Nutrivea™ — Stoffwechsel-Balance & Verdauung">
-    <meta property="og:description" content="Sparen Sie heute 46%! Wissenschaftlich fundierter Ansatz für Stoffwechsel und Verdauung.">
+    <meta property="og:site_name" content="Nutrivea Deutschland & Österreich">
+    <meta property="og:title" content="Nutrivea™ — Stoffwechsel-Balance & Verdauung | 46% Rabatt">
+    <meta property="og:description" content="Der intelligente Weg zu besserem Wohlbefinden. Wissenschaftlich fundiert. Schnelle Lieferung nach DE & AT. Jetzt 46% sparen.">
     <meta property="og:url" content="https://nutrivea.vercel.app/">
     <meta property="og:image" content="images/nutrivea.png">
     <meta property="og:image:alt" content="Nutrivea Flasche">
     <meta property="og:locale" content="de_DE">
+    <meta property="og:locale:alternate" content="de_AT">
 
     <!-- ================= TWITTER CARD ================= -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Nutrivea™ | Sparen Sie heute 46%">
-    <meta name="twitter:description" content="Unterstützen Sie Ihre Verdauung und Stoffwechselbalance auf natürliche Weise.">
+    <meta name="twitter:description" content="Unterstützen Sie Ihre Verdauung und Stoffwechselbalance natürlich. Versand nach DE & AT.">
     <meta name="twitter:image" content="images/nutrivea.png">
 
     <!-- ================= PERFORMANCE & PRECONNECT ================= -->
@@ -58,9 +64,9 @@
         {
           "@type": "Product",
           "name": "Nutrivea™",
-          "image": ["images/nutrivea.png"],
+          "image": ["https://nutrivea.vercel.app/images/nutrivea.png"],
           "description": "Ein wissenschaftlich fundierter Ansatz zur Unterstützung von Verdauung, Stoffwechselgleichgewicht und allgemeinem Wohlbefinden.",
-          "sku": "NUTRIVEA-001",
+          "sku": "NUTRIVEA-DE-001",
           "brand": { "@type": "Brand", "name": "Nutrivea" },
           "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "2000" },
           "offers": {
@@ -69,7 +75,19 @@
             "priceCurrency": "EUR",
             "price": "49.00",
             "availability": "https://schema.org/InStock",
-            "areaServed": ["DE", "AT", "CH", "US", "GB"]
+            "areaServed": ["DE", "AT"],
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingDestination": [
+                { "@type": "DefinedRegion", "addressCountry": "DE" },
+                { "@type": "DefinedRegion", "addressCountry": "AT" }
+              ],
+              "deliveryTime": {
+                "@type": "ShippingDeliveryTime",
+                "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 1, "unitCode": "d" },
+                "transitTime": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 4, "unitCode": "d" }
+              }
+            }
           }
         }
       ]
@@ -95,30 +113,34 @@
         .prose ul { list-style-type: disc; padding-left: 1.5em; margin-bottom: 1em; }
         .prose p { margin-bottom: 1em; line-height: 1.6; }
 
-        /* Custom Colors - #77A285 */
-        .bg-brand { background-color: #77A285; } 
-        .bg-brand-dark { background-color: #5F826A; } 
+        /* Custom Colors Updated */
+        .bg-brand { background-color: #77A285; } /* Principal */
+        .bg-brand-dark { background-color: #156549; } /* Darker Green for hover/contrast */
         .text-brand { color: #77A285; }
+        .text-brand-dark { color: #156549; }
         .border-brand { border-color: #77A285; }
-        .bg-brand-light { background-color: #F1F6F3; }
-        .bg-accent { background-color: #77A285; }
+        .bg-brand-light { background-color: #F6F1EE; } /* Beige/Off-white */
+        
+        /* Utility for the new beige background instead of gray-50 */
+        .bg-beige-light { background-color: #F6F1EE; }
+        .bg-green-dark { background-color: #156549; }
     </style>
 </head>
 <body class="bg-white">
 
-    <!-- 1. Top Announcement Bar -->
-    <div class="bg-black text-white text-[10px] sm:text-xs font-bold py-2 text-center uppercase tracking-wide z-20 relative">
+    <!-- 1. Top Announcement Bar - Updated to Dark Green -->
+    <div class="bg-green-dark text-white text-[10px] sm:text-xs font-bold py-2 text-center uppercase tracking-wide z-20 relative">
         Sonderangebot: Sparen Sie heute 46% | 100% Geld-zurück-Garantie
     </div>
 
-    <!-- 2. Trust Sub-header -->
-    <div class="bg-gray-50 border-b border-gray-200 py-2 overflow-hidden flex z-10 relative">
+    <!-- 2. Trust Sub-header - Updated to Beige -->
+    <div class="bg-beige-light border-b border-gray-200 py-2 overflow-hidden flex z-10 relative">
         <div class="animate-marquee whitespace-nowrap flex items-center min-w-full shrink-0">
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
                 <i class="fas fa-leaf text-brand"></i> STOFFWECHSEL-BALANCE
             </span>
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
-                <i class="fas fa-shipping-fast text-brand"></i> KOSTENLOSER & SCHNELLER VERSAND
+                <i class="fas fa-shipping-fast text-brand"></i> VERSAND NACH DE & AT
             </span>
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
                 <i class="fas fa-shield-alt text-brand"></i> 60 TAGE GELD-ZURÜCK-GARANTIE
@@ -128,7 +150,7 @@
                 <i class="fas fa-leaf text-brand"></i> STOFFWECHSEL-BALANCE
             </span>
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
-                <i class="fas fa-shipping-fast text-brand"></i> KOSTENLOSER & SCHNELLER VERSAND
+                <i class="fas fa-shipping-fast text-brand"></i> VERSAND NACH DE & AT
             </span>
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
                 <i class="fas fa-shield-alt text-brand"></i> 60 TAGE GELD-ZURÜCK-GARANTIE
@@ -140,7 +162,7 @@
                 <i class="fas fa-leaf text-brand"></i> STOFFWECHSEL-BALANCE
             </span>
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
-                <i class="fas fa-shipping-fast text-brand"></i> KOSTENLOSER & SCHNELLER VERSAND
+                <i class="fas fa-shipping-fast text-brand"></i> VERSAND NACH DE & AT
             </span>
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
                 <i class="fas fa-shield-alt text-brand"></i> 60 TAGE GELD-ZURÜCK-GARANTIE
@@ -150,7 +172,7 @@
                 <i class="fas fa-leaf text-brand"></i> STOFFWECHSEL-BALANCE
             </span>
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
-                <i class="fas fa-shipping-fast text-brand"></i> KOSTENLOSER & SCHNELLER VERSAND
+                <i class="fas fa-shipping-fast text-brand"></i> VERSAND NACH DE & AT
             </span>
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
                 <i class="fas fa-shield-alt text-brand"></i> 60 TAGE GELD-ZURÜCK-GARANTIE
@@ -200,9 +222,9 @@
             <p>Nutrivea wurde für Menschen entwickelt, die ihren Körper wieder verstehen wollen – nicht mit Extremen, sondern mit einer durchdachten, natürlichen Unterstützung für Stoffwechsel und Verdauung.</p>
         </div>
 
-        <!-- Benefits (New) -->
-        <div class="bg-white p-5 rounded-xl border border-gray-200 shadow-sm mb-6">
-            <h3 class="font-bold text-gray-900 mb-4 text-lg border-b border-gray-100 pb-2">Warum sich so viele für Nutrivea entscheiden</h3>
+        <!-- Benefits (New) - Updated Background to Beige -->
+        <div class="bg-beige-light p-5 rounded-xl border border-brand/20 shadow-sm mb-6">
+            <h3 class="font-bold text-gray-900 mb-4 text-lg border-b border-gray-200 pb-2">Warum sich so viele für Nutrivea entscheiden</h3>
             <ul class="space-y-3">
                 <li class="flex items-start gap-3"><i class="fas fa-leaf text-brand text-xl mt-0.5"></i><span class="text-gray-700">Unterstützt die natürliche Stoffwechselaktivität</span></li>
                 <li class="flex items-start gap-3"><i class="fas fa-spa text-brand text-xl mt-0.5"></i><span class="text-gray-700">Fördert eine ruhige, funktionierende Verdauung</span></li>
@@ -230,7 +252,7 @@
                 <div class="bg-brand text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">OPTION 1</div>
                 <div class="p-5 pt-8">
                     <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">JETZT STARTEN</h3>
-                    <p class="text-brand font-bold text-sm mb-3 uppercase tracking-wide">Ein bewusster Schritt zu mehr Balance</p>
+                    <p class="text-brand-dark font-bold text-sm mb-3 uppercase tracking-wide">Ein bewusster Schritt zu mehr Balance</p>
                     <p class="text-gray-600 text-sm mb-4 leading-relaxed">Beginnen Sie heute damit, Ihren Körper wieder ins Gleichgewicht zu bringen – sanft, nachhaltig und ohne radikale Umstellungen.</p>
                     <ul class="space-y-2 mb-5 text-sm">
                         <li class="flex items-start gap-2"><i class="fas fa-shipping-fast text-brand mt-1"></i><span class="text-gray-800 font-medium">Kostenloser & schneller Versand</span></li>
@@ -244,24 +266,24 @@
                 </div>
             </div>
 
-            <!-- OPTION 2 (Quiz - Personalized Path) -->
+            <!-- OPTION 2 (Quiz - Personalized Path) - Updated Color to Green Dark #156549 -->
             <div class="border border-gray-300 rounded-xl overflow-hidden shadow-sm relative bg-white">
-                <div class="bg-blue-600 text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">OPTION 2</div>
+                <div class="bg-green-dark text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">OPTION 2</div>
                 <div class="p-5 pt-8">
                     <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">KURZER SELBST-CHECK</h3>
-                    <p class="text-blue-700 font-bold text-sm mb-3 uppercase tracking-wide">Nicht sicher, ob Nutrivea zu Ihnen passt?</p>
+                    <p class="text-brand-dark font-bold text-sm mb-3 uppercase tracking-wide">Nicht sicher, ob Nutrivea zu Ihnen passt?</p>
                     <p class="text-gray-600 text-sm mb-4 leading-relaxed">Beantworten Sie ein paar kurze Fragen und erhalten Sie eine ehrliche Empfehlung – basierend auf Ihrem Alltag, Ihrem Energielevel und Ihren Zielen.</p>
                     <ul class="space-y-2 mb-5 text-sm">
-                        <li class="flex items-start gap-2"><i class="fas fa-clock text-blue-500 mt-1"></i><span class="text-gray-600">Dauert weniger als 1 Minute</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-user-cog text-blue-500 mt-1"></i><span class="text-gray-600">Persönliche Einschätzung</span></li>
-                        <li class="flex items-start gap-2"><i class="fas fa-thumbs-up text-blue-500 mt-1"></i><span class="text-gray-600">Ohne Verpflichtung</span></li>
+                        <li class="flex items-start gap-2"><i class="fas fa-clock text-brand mt-1"></i><span class="text-gray-600">Dauert weniger als 1 Minute</span></li>
+                        <li class="flex items-start gap-2"><i class="fas fa-user-cog text-brand mt-1"></i><span class="text-gray-600">Persönliche Einschätzung</span></li>
+                        <li class="flex items-start gap-2"><i class="fas fa-thumbs-up text-brand mt-1"></i><span class="text-gray-600">Ohne Verpflichtung</span></li>
                     </ul>
-                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RT84CSB/?uid=49585" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-4 rounded-lg shadow-md transition transform active:scale-95 flex items-center justify-center gap-2 text-base border-b-4 border-blue-800 no-underline"><i class="fas fa-clipboard-list text-xl"></i><span>ZUM KURZEN SELBSTTEST</span></a>
+                    <a href="https://www.fasttrack37.com/PM7HK3TH/2RT84CSB/?uid=49585" class="w-full bg-green-dark hover:bg-brand text-white font-bold py-4 px-4 rounded-lg shadow-md transition transform active:scale-95 flex items-center justify-center gap-2 text-base border-b-4 border-black/20 no-underline"><i class="fas fa-clipboard-list text-xl"></i><span>ZUM KURZEN SELBSTTEST</span></a>
                 </div>
             </div>
 
-            <!-- OPTION 3 (Educational Path) -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm relative bg-gray-50">
+            <!-- OPTION 3 (Educational Path) - Updated Background to Beige -->
+            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm relative bg-beige-light">
                  <div class="bg-gray-800 text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">OPTION 3</div>
                 <div class="p-5 pt-8">
                     <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">MEHR VERSTEHEN</h3>
@@ -279,8 +301,8 @@
         </div>
     </div>
 
-    <!-- Footer Section with Policy Links -->
-    <footer class="bg-gray-50 border-t border-gray-200 pt-8 pb-24 text-center">
+    <!-- Footer Section with Policy Links - Updated to Beige Background -->
+    <footer class="bg-beige-light border-t border-gray-200 pt-8 pb-24 text-center">
         <div class="max-w-2xl mx-auto px-4">
             <!-- Footer Logo -->
             <div class="mb-4 flex justify-center">
