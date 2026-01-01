@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="de-DE">
 <head>
+    <!-- Script restaurado conforme solicitado -->
     <script src="https://cdn.raldoeira.com/code/8300-e5d17149-b6f7-4ea0-bda9-43d0118b02ec"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -98,6 +100,7 @@
     <link rel="icon" type="image/png" href="images/nutrivea-favcon.png">
     <link rel="shortcut icon" type="image/png" href="images/nutrivea-favcon.png">
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -124,16 +127,30 @@
         /* Utility for the new beige background instead of gray-50 */
         .bg-beige-light { background-color: #F6F1EE; }
         .bg-green-dark { background-color: #156549; }
+
+        /* --- Scroll Animation Styles --- */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Delays for staggering effect if they appear together */
+        .delay-100 { transition-delay: 0.1s; }
+        .delay-200 { transition-delay: 0.2s; }
     </style>
 </head>
 <body class="bg-white">
 
-    <!-- 1. Top Announcement Bar - Updated to Dark Green -->
+    <!-- 1. Top Announcement Bar - Dark Green -->
     <div class="bg-green-dark text-white text-[10px] sm:text-xs font-bold py-2 text-center uppercase tracking-wide z-20 relative">
         Sonderangebot: Sparen Sie heute 46% | 100% Geld-zurück-Garantie
     </div>
 
-    <!-- 2. Trust Sub-header - Updated to Beige -->
+    <!-- 2. Trust Sub-header - Beige -->
     <div class="bg-beige-light border-b border-gray-200 py-2 overflow-hidden flex z-10 relative">
         <div class="animate-marquee whitespace-nowrap flex items-center min-w-full shrink-0">
             <span class="mx-4 text-[10px] sm:text-xs font-medium text-gray-800 flex items-center gap-1">
@@ -180,8 +197,8 @@
         </div>
     </div>
 
-    <!-- Main Navigation -->
-    <nav class="flex justify-center items-center px-4 py-3 bg-white shadow-sm sticky top-0 z-50">
+    <!-- Main Navigation - bg-brand (#77A285) -->
+    <nav class="flex justify-center items-center px-4 py-3 bg-brand shadow-sm sticky top-0 z-50">
         <!-- Logo Image Replacement -->
         <a href="#" class="flex items-center">
             <img src="images/nutrivea_logo.png" onerror="this.src='https://placehold.co/180x50/77A285/white?text=NUTRIVEA'" alt="Nutrivea Logo" class="h-10 sm:h-12 w-auto object-contain">
@@ -222,8 +239,8 @@
             <p>Nutrivea wurde für Menschen entwickelt, die ihren Körper wieder verstehen wollen – nicht mit Extremen, sondern mit einer durchdachten, natürlichen Unterstützung für Stoffwechsel und Verdauung.</p>
         </div>
 
-        <!-- Benefits (New) - Updated Background to Beige -->
-        <div class="bg-beige-light p-5 rounded-xl border border-brand/20 shadow-sm mb-6">
+        <!-- Benefits (New) - Beige Background - Animation Class -->
+        <div class="bg-beige-light p-5 rounded-xl border border-brand/20 shadow-sm mb-6 reveal-on-scroll">
             <h3 class="font-bold text-gray-900 mb-4 text-lg border-b border-gray-200 pb-2">Warum sich so viele für Nutrivea entscheiden</h3>
             <ul class="space-y-3">
                 <li class="flex items-start gap-3"><i class="fas fa-leaf text-brand text-xl mt-0.5"></i><span class="text-gray-700">Unterstützt die natürliche Stoffwechselaktivität</span></li>
@@ -247,8 +264,8 @@
         <!-- Options Section -->
         <div class="space-y-6 pb-4">
             
-            <!-- OPTION 1 (Primary CTA) -->
-            <div class="border-2 border-brand rounded-xl overflow-hidden shadow-lg relative bg-brand-light">
+            <!-- OPTION 1 (Primary CTA) - Animation Class -->
+            <div class="border-2 border-brand rounded-xl overflow-hidden shadow-lg relative bg-brand-light reveal-on-scroll">
                 <div class="bg-brand text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">OPTION 1</div>
                 <div class="p-5 pt-8">
                     <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">JETZT STARTEN</h3>
@@ -266,8 +283,8 @@
                 </div>
             </div>
 
-            <!-- OPTION 2 (Quiz - Personalized Path) - Updated Color to Green Dark #156549 -->
-            <div class="border border-gray-300 rounded-xl overflow-hidden shadow-sm relative bg-white">
+            <!-- OPTION 2 (Quiz - Personalized Path) - Animation Class -->
+            <div class="border border-gray-300 rounded-xl overflow-hidden shadow-sm relative bg-white reveal-on-scroll">
                 <div class="bg-green-dark text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">OPTION 2</div>
                 <div class="p-5 pt-8">
                     <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">KURZER SELBST-CHECK</h3>
@@ -282,8 +299,8 @@
                 </div>
             </div>
 
-            <!-- OPTION 3 (Educational Path) - Updated Background to Beige -->
-            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm relative bg-beige-light">
+            <!-- OPTION 3 (Educational Path) - Animation Class -->
+            <div class="border border-gray-200 rounded-xl overflow-hidden shadow-sm relative bg-beige-light reveal-on-scroll">
                  <div class="bg-gray-800 text-white text-xs font-bold px-3 py-1 inline-block absolute top-0 left-0 rounded-br-lg z-10">OPTION 3</div>
                 <div class="p-5 pt-8">
                     <h3 class="text-xl font-black text-gray-900 leading-tight mb-1">MEHR VERSTEHEN</h3>
@@ -301,7 +318,7 @@
         </div>
     </div>
 
-    <!-- Footer Section with Policy Links - Updated to Beige Background -->
+    <!-- Footer Section with Policy Links - Beige Background -->
     <footer class="bg-beige-light border-t border-gray-200 pt-8 pb-24 text-center">
         <div class="max-w-2xl mx-auto px-4">
             <!-- Footer Logo -->
@@ -354,6 +371,28 @@
     </div>
 
     <script>
+        // Scroll Animation Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1 // Trigger when 10% visible
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-visible');
+                        observer.unobserve(entry.target); // Animate only once
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
         // Policy Content Data
         const policies = {
             'privacy': `
